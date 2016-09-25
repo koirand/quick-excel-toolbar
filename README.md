@@ -4,7 +4,7 @@ Custom Toolbar will be added to the Excel ribbon.
 ![Toolbar](https://github.com/koirand/QuickExcelToolbar/blob/master/img/Toolbar.png)
 
 ## Install
-1. Download [QXT.xlam](https://github.com/koirand/QuickExcelToolbar/blob/master/QXT.xlam) to any location
+1. Download [QXT.xlam](https://github.com/koirand/QuickExcelToolbar/blob/master/bin/QXT.xlam) to any location
 1. Excel Options -> [Add-Ins] Tab -> [Go] button -> [Browse] button
 1. Select the saved Addin File
 1. Close the dialog with the click of a [OK] button
