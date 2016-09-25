@@ -1,0 +1,162 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+   <ribbon>
+        <tabs>
+            <tab id="customTab" label="QXT" insertAfterMso="TabHome">
+                <group id="FileGroup" label="File" imageMso="FileNew" autoScale="false">
+                    <control idMso="FileNew" showLabel="false" />
+                    <control idMso="FileOpenUsingBackstage" showLabel="false" />
+                    <control idMso="PageSetupPageDialog" showLabel="false" />
+                    <separator id="FileSeparator1" />
+                    <control idMso="FileSave" showLabel="false" />
+                    <control idMso="FileSaveAs" showLabel="false" />
+                    <control idMso="ReadOnly" showLabel="false" />
+                </group>
+                <group id="ViewGroup" label="View" imageMso="ViewFreezePanesGallery" autoScale="false">
+                    <control idMso="ViewFreezePanesGallery" showLabel="false" />
+                    <control idMso="ViewFullScreenView" showLabel="false" />
+                    <button id="ResetCursolAndZoom" showLabel="false" screentip="RESET CURSOL POSITION AND ZOOM" supertip="Select A1 Cell and zoom to 100%." image="A1Select" onAction="QXT_resetCursolAndZoom" />
+                    <separator id="ViewSeparator1" />
+                    <control idMso="ViewFormulaBar" showLabel="false" />
+                    <control idMso="GridlinesExcel" showLabel="false" />
+                    <control idMso="ViewHeadings" showLabel="false" />
+                </group>
+                <group id="CopyGroup" label="Copy" imageMso="Copy" autoScale="false">
+                    <control idMso="Cut" showLabel="false" />
+                    <control idMso="Copy" showLabel="false" />
+                    <control idMso="FormatPainter" showLabel="false" />
+                    <control idMso="Paste" showLabel="false" />
+                    <control idMso="PasteValues" showLabel="false" />
+                    <control idMso="PasteFormulas" showLabel="false" />
+                </group>
+                <group id="TextFormatGroup" label="Text Fomat" imageMso="Bold" autoScale="false">
+                    <box id="TextFormatHBox1" boxStyle="horizontal">
+                        <control idMso="Font" />
+                        <control idMso="FontSize" showLabel="false" />
+                        <control idMso="FontColorPicker" showLabel="false" />
+                    </box>
+                    <box id="TextFormatHBox2" boxStyle="horizontal">
+                        <control idMso="AlignLeft" showLabel="false" />
+                        <control idMso="AlignCenter" showLabel="false" />
+                        <control idMso="AlignRight" showLabel="false" />
+                        <control idMso="AlignJustify" showLabel="false" />
+                        <control idMso="AlignTopExcel" showLabel="false" />
+                        <control idMso="AlignMiddleExcel" showLabel="false" />
+                        <control idMso="AlignBottomExcel" showLabel="false" />
+                    </box>
+                    <box id="TextFormatHBox3" boxStyle="horizontal">
+                        <control idMso="FontSizeIncrease" showLabel="false" />
+                        <control idMso="FontSizeDecrease" showLabel="false" />
+                        <button id="ShrinkToFit" showLabel="false" screentip="SHRINK TO FIT" supertip="Togle ajust font size to fit the cell." image="ShrinkToFit" onAction="QXT_shrinkToFit" />
+                        <control idMso="Bold" showLabel="false" />
+                        <control idMso="Italic" showLabel="false" />
+                        <control idMso="Underline" showLabel="false" />
+                        <control idMso="Strikethrough" showLabel="false" />
+                    </box>
+                </group>
+                <group id="CellFormatGroup" label="Cell Fomat" imageMso="CellFillColorPicker" autoScale="false">
+                    <box id="CellFormatHBox1" boxStyle="horizontal">
+                        <control idMso="NumberFormatGallery" showLabel="false" />
+                        <control idMso="CellFillColorPicker" showLabel="false" />
+                    </box>
+                    <box id="CellFormatHBox2" boxStyle="horizontal">
+                        <control idMso="DecimalsIncrease" showLabel="false" />
+                        <control idMso="DecimalsDecrease" showLabel="false" />
+                        <control idMso="CommaStyle" showLabel="false" />
+                        <control idMso="PercentStyle" showLabel="false" />
+                    </box>
+                    <box id="CellFormatHBox3" boxStyle="horizontal">
+                        <control idMso="IndentDecreaseExcel" showLabel="false" />
+                        <control idMso="IndentIncreaseExcel" showLabel="false" />
+                        <control idMso="SheetRowsInsert" showLabel="false" />
+                        <control idMso="SheetRowsDelete" showLabel="false" />
+                    </box>
+                    <separator id="FormatSeparator1" />
+                    <box id="CellFormatHBox4" boxStyle="horizontal">
+                        <button id="StyleDefault" showLabel="false" screentip="DEFAULT STYLE" supertip="Change color of font and background to default style" image="StyleDefault" onAction="QXT_styleDefault" />
+                        <button id="StyleSuccessLight" showLabel="false" screentip="SUCCESS STYLE 1" supertip="Change color of font and background to light success style" image="StyleSuccessLight" onAction="QXT_styleSuccessLight" />
+                        <button id="StyleInfoLight" showLabel="false" screentip="INFO STYLE 1" supertip="Change color of font and background to light info style" image="StyleInfoLight" onAction="QXT_styleInfoLight" />
+                        <button id="StyleWarningLight" showLabel="false" screentip="WARNING STYLE 1" supertip="Change color of font and background to light warning style" image="StyleWarningLight" onAction="QXT_styleWarningLight" />
+                        <button id="StyleDangerLight" showLabel="false" screentip="DANGER STYLE 1" supertip="Change color of font and background to light danger style" image="StyleDangerLight" onAction="QXT_styleDangerLight" />
+                    </box>
+                    <box id="CellFormatHBox5" boxStyle="horizontal">
+                        <button id="StylePrimary" showLabel="false" screentip="PRIMARY STYLE" supertip="Change color of font and background to primary" image="StylePrimary" onAction="QXT_stylePrimary" />
+                        <button id="StyleSuccessDark" showLabel="false" screentip="SUCCESS STYLE 2" supertip="Change color of font and background to dark success style" image="StyleSuccessDark" onAction="QXT_styleSuccessDark" />
+                        <button id="StyleInfoDark" showLabel="false" screentip="INFO STYLE 2" supertip="Change color of font and background to dark info style" image="StyleInfoDark" onAction="QXT_styleInfoDark" />
+                        <button id="StyleWarningDark" showLabel="false" screentip="WARNING STYLE 2" supertip="Change color of font and background to dark warning style" image="StyleWarningDark" onAction="QXT_styleWarningDark" />
+                        <button id="StyleDangerDark" showLabel="false" screentip="DANGER STYLE 2" supertip="Change color of font and background to dark danger style" image="StyleDangerDark" onAction="QXT_styleDangerDark" />
+                    </box>
+                    <box id="CellFormatHBox6" boxStyle="horizontal">
+                        <control idMso="MergeCenter" showLabel="false" />
+                        <control idMso="MergeCells" showLabel="false" />
+                        <control idMso="WrapText" showLabel="false" />
+                        <button id="SetSameColumnWidth" showLabel="false" screentip="SET SAME COLUMN WIDTH" supertip="Set the column width the same as the active cell." image="ColumnWidth" onAction="QXT_setSameColumnWidth" />
+                        <button id="SetSameRowHeight" showLabel="false" screentip="SET SAME ROW HEIGHT" supertip="Set the row height the same as the active cell." image="RowHeight" onAction="QXT_setSameRowHeight" />
+                    </box>
+                </group>
+                <group id="BorderGroup" label="Border" imageMso="BordersAll" autoScale="false">
+                    <control idMso="BorderDrawLine" showLabel="false" />
+                    <control idMso="BorderErase" showLabel="false" />
+                    <control idMso="BorderNone" showLabel="false" />
+                    <control idMso="BordersAll" showLabel="false" />
+                    <control idMso="BorderOutside" showLabel="false" />
+                    <control idMso="BordersGallery" showLabel="false" />
+                </group>
+                <group id="DrawingGroup" label="Drawing" imageMso="ShapeRoundedRectangularCallout" autoScale="false">
+                    <control idMso="ShapesInsertGallery" showLabel="false" />
+                    <control idMso="ObjectEditShapeMenu" showLabel="false"/>
+                    <control idMso="ObjectsSelect" showLabel="false" />
+                    <control idMso="CellFillColorPicker" showLabel="false" />
+                    <control idMso="OutlineColorPicker" showLabel="false" />
+                    <control idMso="ShapeEffectsMenu" showLabel="false" />
+                    <separator id="DrawingSeparator1" />
+                    <control idMso="TextBoxInsertHorizontal" showLabel="false" />
+                    <control idMso="ShapeStraightConnector" showLabel="false" />
+                    <control idMso="ShapeStraightConnectorArrow" showLabel="false" />
+                    <control idMso="ShapeRectangle" showLabel="false" />
+                    <control idMso="ShapeRoundedRectangularCallout" showLabel="false" />
+                    <button id="CreateBaloonWithText" showLabel="false" screentip="CREATE BALOON WITH TEXT" supertip="Create a baloon object which have active cell text." image="BaloonWithText" onAction="QXT_createBaloonWithText" />
+                    <control idMso="PictureInsertFromFile" showLabel="false" />
+                    <control idMso="Camera" showLabel="false" />
+                    <control idMso="ScreenshotInsertGallery" showLabel="false" />
+                    <separator id="DrawingSeparator2" />
+                    <control idMso="ObjectAlignMenu" showLabel="false" />
+                    <control idMso="ObjectsGroup" showLabel="false" />
+                    <control idMso="ObjectsUngroup" showLabel="false" />
+                    <control idMso="ObjectBringToFront" showLabel="false" />
+                    <control idMso="ObjectSendToBack" showLabel="false" />
+                    <control idMso="ObjectRotateGallery" showLabel="false" />
+                    <button id="SizeUpImage" showLabel="false" screentip="SIZE UP IMAGE" supertip="Enlarge selected image +20%." image="SizeUpImage" onAction="QXT_sizeUpImage" />
+                    <button id="SizeDownImage" showLabel="false" screentip="SIZE DOWN IMAGE" supertip="Shrink selected image -20%." image="SizeDownImage" onAction="QXT_sizeDownImage" />
+                </group>
+                <group id="AnalyticsGroup" label="Analytics" imageMso="FunctionWizard" autoScale="false">
+                    <control idMso="FunctionWizard" showLabel="false" />
+                    <control idMso="AutoSum" showLabel="false" />
+                    <control idMso="ShowFormulas" size="normal" showLabel="false" />
+                    <separator id="AnalyzeSeparator1" />
+                    <control idMso="PivotTableInsert" showLabel="false" />
+                    <control idMso="RemoveDuplicates" showLabel="false" />
+                    <control idMso="ChartInsert" showLabel="false" />
+                    <separator id="AnalyzeSeparator2" />
+                    <control idMso="DataValidation" showLabel="false" />
+                    <button id="Increment" showLabel="false" screentip="INCREMENT" supertip="Plus 1 value of the active cell." image="Increment" onAction="QXT_increment" />
+                    <button id="Decrement" showLabel="false" screentip="DECREMENT" supertip="Subtract 1 value of the active cell." image="Decrement" onAction="QXT_decrement" />
+                    <separator id="AnalyzeSeparator3" />
+                    <control idMso="OutlineGroup" size="normal" showLabel="false" />
+                    <control idMso="OutlineUngroup" size="normal" showLabel="false" />
+                    <control idMso="OutlineSubtotals" size="normal" showLabel="false" />
+                </group>
+                <group id="FilterGroup" label="Filter" imageMso="Filter" autoScale="false">
+                    <control idMso="Filter" showLabel="false" />
+                    <control idMso="SortClear" showLabel="false" />
+                    <control idMso="ConditionalFormattingMenu" size="normal" showLabel="false" />
+                    <control idMso="SortAscendingExcel" showLabel="false" />
+                    <control idMso="SortDescendingExcel" showLabel="false" />
+                    <control idMso="SortCustomExcel" showLabel="false" />
+                </group>
+                <group id="HelpGroup" label="Help" imageMso="Help" autoScale="false">
+                    <button id="Help" size="large" screentip="HELP" supertip="Show Readme on browser." imageMso="Help" onAction="QXT_Help" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>
