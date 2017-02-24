@@ -144,6 +144,10 @@
                     <control idMso="OutlineGroup" size="normal" showLabel="false" />
                     <control idMso="OutlineUngroup" size="normal" showLabel="false" />
                     <control idMso="OutlineSubtotals" size="normal" showLabel="false" />
+                    <separator id="AnalyzeSeparator4" />
+                    <control idMso="CalculationOptionsMenu" size="normal" showLabel="false" />
+                    <control idMso="CalculateNow" size="normal" showLabel="false" />
+                    <control idMso="CalculateSheet" size="normal" showLabel="false" />
                 </group>
                 <group id="FilterGroup" label="Filter" imageMso="Filter" autoScale="false">
                     <control idMso="Filter" showLabel="false" />
