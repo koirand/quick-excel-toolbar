@@ -106,6 +106,7 @@ End Sub
 
 Sub QXT_increment(Optional control As IRibbonControl = Nothing)
 
+    Dim c As Range
     If TypeName(Selection) = "Range" Then
         For Each c In Selection.Cells
 
@@ -120,12 +121,13 @@ Sub QXT_increment(Optional control As IRibbonControl = Nothing)
 
             End If
         Next
-    End
+    End If
     
 End Sub
 
 Sub QXT_decrement(Optional control As IRibbonControl = Nothing)
 
+    Dim c As Range
     If TypeName(Selection) = "Range" Then
         For Each c In Selection.Cells
 
@@ -140,7 +142,7 @@ Sub QXT_decrement(Optional control As IRibbonControl = Nothing)
 
             End If
         Next
-    End
+    End If
     
 End Sub
 
