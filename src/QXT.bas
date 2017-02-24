@@ -6,8 +6,8 @@ Sub Auto_Open()
     'disabele F1 key
     Application.OnKey "{F1}", "QXT_nothingDo"
     
-    'reset cursol position and zoom
-    Application.OnKey "^A", "QXT_resetCursolAndZoom"
+    'reset cursol position
+    Application.OnKey "^A", "QXT_resetCursol"
     
     'insert row
     Application.OnKey "{INSERT}", "QXT_insert"
@@ -106,33 +106,45 @@ End Sub
 
 Sub QXT_increment(Optional control As IRibbonControl = Nothing)
 
-    If ActiveCell.Value = "" Then
-        Exit Sub
-        
-    ElseIf IsNumeric(ActiveCell.Value) Then
-        ActiveCell.Value = ActiveCell.Value + 1
-    
-    ElseIf IsDate(ActiveCell.Value) Then
-        ActiveCell.Value = CDate(ActiveCell.Value) + 1
-        
-    End If
+    If TypeName(Selection) = "Range" Then
+        For Each c In Selection.Cells
+
+            If c.Value = "" Then
+                Exit Sub
+
+            ElseIf IsNumeric(c.Value) Then
+                c.Value = c.Value + 1
+
+            ElseIf IsDate(c.Value) Then
+                c.Value = CDate(c.Value) + 1
+
+            End If
+        Next
+    End
     
 End Sub
 
 Sub QXT_decrement(Optional control As IRibbonControl = Nothing)
 
-    If ActiveCell.Value = "" Then
-        Exit Sub
-        
-    ElseIf IsNumeric(ActiveCell.Value) Then
-        ActiveCell.Value = ActiveCell.Value - 1
-        
-    ElseIf IsDate(ActiveCell.Value) Then
-        ActiveCell.Value = CDate(ActiveCell.Value) - 1
-            
-    End If
+    If TypeName(Selection) = "Range" Then
+        For Each c In Selection.Cells
+
+            If c.Value = "" Then
+                Exit Sub
+
+            ElseIf IsNumeric(c.Value) Then
+                c.Value = c.Value - 1
+
+            ElseIf IsDate(c.Value) Then
+                c.Value = CDate(c.Value) - 1
+
+            End If
+        Next
+    End
     
 End Sub
+
+
 
 Sub QXT_fullScreen()
 
@@ -167,7 +179,7 @@ Sub QXT_drawBorders()
     
 End Sub
 
-Sub QXT_resetCursolAndZoom(Optional control As IRibbonControl = Nothing)
+Sub QXT_resetCursol(Optional control As IRibbonControl = Nothing)
     Dim ws As Excel.Worksheet
 
     Application.ScreenUpdating = False
@@ -176,7 +188,6 @@ Sub QXT_resetCursolAndZoom(Optional control As IRibbonControl = Nothing)
     
         For Each ws In ActiveWorkbook.Worksheets
             Application.GoTo ws.Cells(1, 1), True
-            ActiveWindow.Zoom = 100
         Next
 
         ActiveWorkbook.Sheets(1).Select
@@ -318,5 +329,6 @@ Sub QXT_help(Optional control As IRibbonControl = Nothing)
     Set Shell = Nothing
 
 End Sub
+
 
 
