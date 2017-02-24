@@ -14,7 +14,7 @@
                 <group id="ViewGroup" label="View" imageMso="ViewFreezePanesGallery" autoScale="false">
                     <control idMso="ViewFreezePanesGallery" showLabel="false" />
                     <control idMso="ViewFullScreenView" showLabel="false" />
-                    <button id="ResetCursolAndZoom" showLabel="false" screentip="RESET CURSOL POSITION AND ZOOM" supertip="Select A1 Cell and zoom to 100%." image="A1Select" onAction="QXT_resetCursolAndZoom" />
+                    <button id="ResetCursol" showLabel="false" screentip="RESET CURSOL POSITION" supertip="Select A1 Cell in all sheets." image="A1Select" onAction="QXT_resetCursol" />
                     <separator id="ViewSeparator1" />
                     <control idMso="ViewFormulaBar" showLabel="false" />
                     <control idMso="GridlinesExcel" showLabel="false" />
@@ -30,7 +30,7 @@
                 </group>
                 <group id="TextFormatGroup" label="Text Fomat" imageMso="Bold" autoScale="false">
                     <box id="TextFormatHBox1" boxStyle="horizontal">
-                        <control idMso="Font" />
+                        <control idMso="Font" showLabel="false" />
                         <control idMso="FontSize" showLabel="false" />
                         <control idMso="FontColorPicker" showLabel="false" />
                     </box>
@@ -128,7 +128,7 @@
                     <button id="SizeUpImage" showLabel="false" screentip="SIZE UP IMAGE" supertip="Enlarge selected image +20%." image="SizeUpImage" onAction="QXT_sizeUpImage" />
                     <button id="SizeDownImage" showLabel="false" screentip="SIZE DOWN IMAGE" supertip="Shrink selected image -20%." image="SizeDownImage" onAction="QXT_sizeDownImage" />
                 </group>
-                <group id="AnalyticsGroup" label="Analytics" imageMso="FunctionWizard" autoScale="false">
+                <group id="StatisticsGroup" label="Statistics" imageMso="FunctionWizard" autoScale="false">
                     <control idMso="FunctionWizard" showLabel="false" />
                     <control idMso="AutoSum" showLabel="false" />
                     <control idMso="ShowFormulas" size="normal" showLabel="false" />
