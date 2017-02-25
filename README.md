@@ -1,7 +1,8 @@
 # QuickExcelToolbar
 Useful Excel Addin.
 Custom Toolbar will be added to the Excel ribbon.
-![Toolbar](https://github.com/koirand/QuickExcelToolbar/blob/master/img/Toolbar.png)
+![Screanshot1](https://github.com/koirand/QuickExcelToolbar/blob/master/img/ScreanShot_LightTheme.png)
+![Screanshot2](https://github.com/koirand/QuickExcelToolbar/blob/master/img/ScreanShot_DarkTheme.png)
 
 ## Install
 1. Download [QXT.xlam](https://github.com/koirand/QuickExcelToolbar/blob/master/bin/QXT.xlam) to any location
