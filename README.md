@@ -1,4 +1,4 @@
-# QuickExcelToolbar
+# quick-excel-toolbar
 Useful Excel Addin.
 Custom Toolbar will be added to the Excel ribbon.
 ![Screanshot1](https://github.com/koirand/QuickExcelToolbar/blob/master/img/ScreanShot_LightTheme.png)
