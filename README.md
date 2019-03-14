@@ -31,11 +31,11 @@ Custom Toolbar will be added to the Excel ribbon.
 - ![Decrement](https://github.com/koirand/QuickExcelToolbar/blob/master/img/Decrement.png) : Subtract 1 value of the active cell
 
 ## KeyBoard Shortcuts
-- F1 : Disable (Do not open help dialog)
-- F11 : Togle fullscreen
-- Insert : Insert row
-- Ctrl+Shift+a : Select A1 cell in all sheets
-- Ctrl+Shift+v : Paste only value
-- Ctrl+^ : Create a baloon object which have active cell text
-- Ctrl+@ : Shrink selected image -20%
-- Ctrl+k : Draw selected cell borders
+- <kbd>F1</kbd> : Disable (Do not open help dialog)
+- <kbd>F11</kbd> : Togle fullscreen
+- <kbd>Insert</kbd> : Insert row
+- <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>a</kbd> : Select A1 cell in all sheets
+- <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd> : Paste only value
+- <kbd>Ctrl</kbd>+<kbd>^</kbd> : Create a baloon object which have active cell text
+- <kbd>Ctrl</kbd>+<kbd>@</kbd> : Shrink selected image -20%
+- <kbd>Ctrl</kbd>+<kbd>k</kbd> : Draw selected cell borders
