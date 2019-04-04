@@ -10,6 +10,12 @@ Custom Toolbar will be added to the Excel ribbon.
 1. Select the saved Addin File
 1. Close the dialog with the click of a [OK] button
 
+If the toolbar does not appear, try deprotecting the xlam file.
+- Right click QXT.xlam -> Properties
+- Security -> Check "Unlock"
+
+![](https://user-images.githubusercontent.com/17229643/55527999-4e68ec80-56d6-11e9-8e73-9f799fca4155.png)
+
 ## Uninstall
 1. Remove "ExcelKeyboardShortcutAddin.xlam" file on your PC
 1. Restart Excel
